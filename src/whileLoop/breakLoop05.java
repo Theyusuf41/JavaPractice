@@ -1,0 +1,8 @@
+package whileLoop;
+
+public class breakLoop05 {
+    public static void main(String[] args) {
+
+    }
+}
+// Task-> girilen 7 tamsyının 10 ile 20 arasındakileri hariç toplamını print eden code create ediniz.
