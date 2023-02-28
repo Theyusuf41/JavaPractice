@@ -17,6 +17,7 @@ public class C02_LocalTime {
         System.out.println(time1.plusHours(3).minusMinutes(83).plusSeconds(100));
 
 
+
     }
 }
 // LocalTime saat,dakika,saniye datalarini store ederiz.
