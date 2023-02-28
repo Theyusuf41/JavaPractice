@@ -7,11 +7,11 @@ public class C04_PassByValue {
         price=100;
         discount=0.1;
         System.out.println("The price before discount " + price);
-        azpara(price, discount);
+        azpara(price, discount); // overloading
         discount=0.25;
-        azpara(price, discount);
+        azpara(10, 0.5);
         discount=0.5;
-        azpara(price, discount);
+        azpara(500, 0.6);
         System.out.println("The price after discount " + price);
 
 
