@@ -30,5 +30,7 @@ public class C02_StringBuilder {
         System.out.println(sb2.capacity());
 
 
+
+
     }
 }
