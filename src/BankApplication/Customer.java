@@ -29,7 +29,7 @@ public class Customer {
 
     public void addBalance(double amount){
         this.balance += amount;
-        System.out.println("Sayin " + name + "  "  );
+        System.out.println("Sayin " + name + "  " + amount + " yatirildi." );
 
 
     }

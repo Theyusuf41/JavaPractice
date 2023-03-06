@@ -29,18 +29,54 @@ public class App {
                bakiyeYazdir(customer1);
                 break;
             case 2:
-                customer1.addBalance();
-                break;
-            case 3:
-                customer1.withdrawMoney();
-                break;
-            case 4:
-                customer1.chancePassword();
-                break;
-            case 5:
+                paraEkle(customer1);
 
                 break;
+            case 3:
+                paraCek(customer1);
+                break;
+            /*case 4:
+                customer1.chancePassword();
+                break; */
+            case 4:
+                cikis();
+                break;
         }
+    }
+
+    public static void cikis() {
+        System.out.println("Bizi tercih ettiginiz icin tesekkurler. Hizmetinizdeyiz!!! ");
+    }
+
+    public static void paraCek(Customer customer1) {
+        System.out.println("Kac para cekmek istiyorsunuz? ");
+        double miktar = scanner.nextDouble();
+        if(pozitifMi(miktar)) {
+            customer1.withdrawMoney(miktar);
+        }else{
+            System.out.println("Lütfen pozitif bir sayi giriniz ? ");
+            paraCek(customer1);
+        }
+    }
+
+    public static void paraEkle(Customer customer1) {
+        System.out.println("Kac para yatirmak istiyorsunuz? ");
+        double miktarInput = scanner.nextDouble();
+        if(pozitifMi(miktarInput)) {
+            customer1.addBalance(miktarInput);
+        }else{
+            System.out.println("Lütfen pozitif bir sayi giriniz ? ");
+            paraEkle(customer1);
+        }
+
+
+    }
+
+    public static boolean pozitifMi(double i) {
+        if(i>0){
+            return true;
+        }
+        return false;
     }
 
     public static void bakiyeYazdir(Customer customer1) {
