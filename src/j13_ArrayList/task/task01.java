@@ -22,15 +22,32 @@ public class task01 {
         for (int x: profitDailyBasis ) {
             profitMoney+=x;
         }
-        getAvearage(profitMoney);
-        // compare methodu ToDo
+        System.out.println("Haftalik ortalama kazanciniz: " +getAvearage(profitMoney));
+        aboveAverageProfit(profitMoney , profitDailyBasis ,days);
+
+
+
 
 
 
     }
 
-    public static void getAvearage(int profitMoney) {
-        System.out.println("bu haftaki ortalama kazanciniz : " + (profitMoney/7));
+    public static void aboveAverageProfit(int profitMoney, ArrayList<Integer> profitDailyBasis , ArrayList<String>days) {
+        for(int i=0; i<profitDailyBasis.size(); i++) {
+            if(profitDailyBasis.get(i) >= (profitMoney/ days.size())){ // hata aliyorum bakicam tekrar
+                for(int j=0; j< days.size(); j++){
+                    System.out.println("Su gun: " + days.get(i) + " kazanciniz ortalama ustu");
+                    break;
+                }
+            }
+        }
+
+
+    }
+
+    public static int getAvearage(int profitMoney) {
+        int a = (profitMoney/7);
+        return a;
     }
 
 
