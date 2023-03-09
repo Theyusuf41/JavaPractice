@@ -41,8 +41,6 @@ public class task01 {
                 }
             }
         }
-
-
     }
 
     public static int getAvearage(int profitMoney) {
