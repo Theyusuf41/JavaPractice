@@ -1,7 +1,25 @@
 package j13_ArrayList.task;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class task10 {
     public static void main(String[] args) {
+        ArrayList<Integer> numList = new ArrayList<>(Arrays.asList( 1 , 5 , 22, 10 ,20 ,14 , 8 , 25 , 30, 28));
+        int min =20;
+        int max =30;
+        System.out.println(rangeBtw(min, max, numList));
+
+    }
+    public static int rangeBtw(int min,int max, ArrayList<Integer> numList){
+        int counter=0;
+        for (int i = 0; i <numList.size() ; i++) {
+            if(numList.get(i)<=max && numList.get(i)>=min ){
+                counter++;
+            }
+        }
+        return counter;
+
 
     }
 }

@@ -15,7 +15,7 @@ public class task11 {
         System.out.println("Sayi giriniz: ");
         int num = scanner.nextInt();
         ArrayList<Integer> listNumbers = new ArrayList<>();
-        for (int i = 2; i <= num; i++) {
+        for (int i = 2; i < num; i++) {
             if(num%i==0) {
                 listNumbers.add(i);
             }
