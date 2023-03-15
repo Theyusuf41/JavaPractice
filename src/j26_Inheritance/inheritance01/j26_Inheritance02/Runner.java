@@ -20,6 +20,10 @@ public class Runner {
         //System.out.println(k3.c + " k3.c"); // koyundan geldi
         //System.out.println(k3.d + " k3.d"); // koyundan geldi
         System.out.println(k3.m + " k3.m"); // mammal geldi
+        System.out.println("**************");
+        k1.mA(); // hayvan class meth call edildi
+        k1.mC(); // koyun class meth call
+        k1.mM(); // Mammal class meth call
 
         // tanimladigimiz obje uzerinden variablara bakariz. Eger mammalden tanimladiysak koyundaki variable'lari alamayiz.
         // Parent veya grandparenttanda istedigimiz obj uretilebilir ancak ondaki variablelerin hepsini alamayiz!!!
