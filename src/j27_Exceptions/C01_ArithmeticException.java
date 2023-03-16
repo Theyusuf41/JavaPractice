@@ -1,4 +1,4 @@
-package j26_Exceptions;
+package j27_Exceptions;
 
 import java.util.Scanner;
 

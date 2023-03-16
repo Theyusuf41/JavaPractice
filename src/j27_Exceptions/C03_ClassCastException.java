@@ -1,4 +1,4 @@
-package j26_Exceptions;
+package j27_Exceptions;
 
 public class C03_ClassCastException {
     public static void main(String[] args) {

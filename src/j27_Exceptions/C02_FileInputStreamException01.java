@@ -1,7 +1,6 @@
-package j26_Exceptions;
+package j27_Exceptions;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class C02_FileInputStreamException01 {
