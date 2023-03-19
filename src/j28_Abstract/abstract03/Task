@@ -1,0 +1,4 @@
+1- name fieldi ve default constructori olan Sekil isimli bir Abstract Class create ediniz.
+2- Alan ve Cevre icin ABstract method olusturun bu methodlarin sonuclari toString icinde yazsin. getName ve ciz conct method create et.
+3- Dikdortgen ve Cember isimli 2 class olusturun
+4- Birer ornek main methodda calistirin
