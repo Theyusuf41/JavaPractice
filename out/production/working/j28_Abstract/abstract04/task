@@ -1,0 +1,5 @@
+1- Food adinda bir abstract class olustur. Bu class'ta madeln ve taste adinda abstract methodlar olsun
+2- 2 tane Sweet ve Salad adinda class extend et. Sweet classin altinda taste() methounda good, sugar, sweet variablasi ac
+3- Son olarak Sweet altina Baklava ve Cheese Cake adinda 2 obj olustur.
+4- Salad altinda GreekSalad ve SezarSalad adinda 2 obj olustur.
+5- Runner olusturup bunlari run et
