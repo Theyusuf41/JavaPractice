@@ -2,7 +2,7 @@ package extraExercies;
 
 import java.util.ArrayList;
 
-public class ArrayExercies {
+public class TEamWork02_01 {
     public static void main(String[] args) {
         int [][] arr1 = {{1, 2, 4, 6}, {2, 4}};
         int [][] arr2 = {{1, 2, 4, 4, 6}, {2, 4}};
@@ -15,7 +15,6 @@ public class ArrayExercies {
                 }
             }
             System.out.println(l1);
-
         }
 
 
