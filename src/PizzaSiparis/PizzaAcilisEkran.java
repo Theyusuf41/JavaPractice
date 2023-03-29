@@ -1,7 +1,7 @@
 package PizzaSiparis;
 
 public class PizzaAcilisEkran {
-    static void menu() {
+    public static void menu() {
         // TITLES
         String welcomeHeader = "+---------------------------------------------------+";
         String welcomeBanner = "|          WELCOME TO ANAR-COM PIZZA HOUSE          |";
