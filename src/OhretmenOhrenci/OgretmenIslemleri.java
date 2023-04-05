@@ -2,9 +2,9 @@ package OhretmenOhrenci;
 
 import java.util.Scanner;
 
-import static PROLECTS.ogrcOgrtYonetimiMap01.AnaMenu.girisPaneli;
-import static PROLECTS.ogrcOgrtYonetimiMap01.AnaMenu.işlemMenu;
-import static PROLECTS.ogrcOgrtYonetimiMap01.AnaMenu.kimlikIDKontrol;
+import static OhretmenOhrenci.AnaMenu.girisPaneli;
+import static OhretmenOhrenci.AnaMenu.işlemMenu;
+
 
 public class OgretmenIslemleri implements Ogrt_OğrcIslemleri {
     static Scanner input = new Scanner(System.in);
@@ -60,7 +60,7 @@ public class OgretmenIslemleri implements Ogrt_OğrcIslemleri {
     public void ekleme(){
         System.out.println("kimlik numarası giriniz");
         String kimlikID = input.next();
-        kimlikIDKontrol(kimlikID);
+        //kimlikIDKontrol(kimlikID);
         System.out.println("adSoyad yas bolum sicil giriniz");
         // System.out.println("adSoyad");
         input.nextLine();

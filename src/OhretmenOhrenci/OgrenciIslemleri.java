@@ -60,7 +60,7 @@ public class OgrenciIslemleri implements Ogrt_OğrcIslemleri{
     public void ekleme(){
            System.out.println("kimlik numarası giriniz");
            String kimlikID = input.next();
-           kimlikIDKontrol(kimlikID);
+           //kimlikIDKontrol(kimlikID);
            System.out.println("adSoyad yas numara sinif giriniz");
            // System.out.println("adSoyad");
            input.nextLine();

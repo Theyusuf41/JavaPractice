@@ -1,6 +1,7 @@
 package OhretmenOhrenci;
 
-import static PROLECTS.ogrcOgrtYonetimiMap01.AnaMenu.girisPaneli;
+
+import static OhretmenOhrenci.AnaMenu.girisPaneli;
 
 public class Runner {
 
