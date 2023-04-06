@@ -23,6 +23,55 @@ public class C10_LambdaObject {
         System.out.println(notOrtIlkUc(unv));
         System.out.println(minOgrenciNum(unv));
         System.out.println(ortalamaUstuOgrenciSayisi(unv));
+        ogrFazlaNotAl(unv);
+        sayiMatBolumu(unv);
+        belirliOgrenciNotAl(unv);
+        belirliOgrenciNotAlDusuk(unv);
+
+
+
+    }
+
+    public static void belirliOgrenciNotAlDusuk(List<University> unv) {
+        //task11-> Ogrenci sayilari 1071'dan az olan universite'lerin en kucuk notOrt'unu print eden code create ediniz...
+        unv.stream()
+                .filter(t -> t.getOgrcSayisi() < 1071)
+                .sorted(Comparator.comparing(University::getNotOrt))
+                .limit(1).forEach(t-> System.out.println(t));
+
+        /*
+        Bu kodlara bir alternatif bu:
+        .stream()
+                .filter(t -> t.getOgrcSayisi() < 1071)
+                .mapToDouble(t -> t.getNotOrt())
+                .min();//akışdaki elemanların min alındı
+         */
+
+    }
+
+    public static void belirliOgrenciNotAl(List<University> unv) {
+        //task10-> Ogrenci sayilari 571'dan fazla olan universite'lerin en buyuk notOrt'unu print eden code create ediniz...
+        unv.stream()
+                .filter(t -> t.getOgrcSayisi() > 571)
+                .sorted(Comparator.comparing(University::getNotOrt).reversed())
+                .limit(1).forEach(t-> System.out.println(t));
+
+    }
+
+    public static void sayiMatBolumu(List<University> unv) {
+        //task09-> "matematik" bolumlerinin sayisini  print eden code create ediniz...
+        System.out.println(unv.stream()
+                .filter(t -> t.getBolum().contains("Mat"))
+                .count());
+
+    }
+
+    public static void ogrFazlaNotAl(List<University> unv) {
+        //task08-> Ogrenci sayisi 333'dan buyuk olan universite'lerin notOrt'larinin ortalamasini print eden code create ediniz...
+        System.out.println(unv.stream()
+                .filter(t -> t.getOgrcSayisi() > 333)
+                .mapToDouble(t -> t.getNotOrt())
+                .average());
 
     }
 
@@ -38,7 +87,7 @@ public class C10_LambdaObject {
     public static List<University> minOgrenciNum(List<University> unv) {
         //task06-> ogrc sayisi en az olan 2. universite'yi  print eden code create ediniz...
         return unv.stream()
-                .sorted(Comparator.comparing(University::getOgrcSayisi)).limit(2)
+                .sorted(Comparator.comparing(University::getOgrcSayisi)).limit(2).skip(1)
                 .collect(Collectors.toList());
     }
 
