@@ -2,9 +2,13 @@ package j16_DateTime;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.Scanner;
 
 public class C01_LocalDate {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Once yil, ardindan ay, en son gun giriniz");
+
 
         LocalDate today = LocalDate.now();
         System.out.println(today);
