@@ -20,9 +20,7 @@ public class Calisan {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name.toUpperCase();
-    }
+    public void setName(String name) {this.name = name;}
 
     public int getSalary() {
         return salary;
