@@ -12,9 +12,11 @@ public class Islemler {
     static int id=100;
     static HashMap<Integer , Calisan> cls = new HashMap<>();
 
+
+
     public static void calisanTanimla(){
         System.out.print("calisan adi ");
-        String name = scan.nextLine();
+        String name = scan.next();
         scan.nextLine();
         System.out.print("maasi nedir: ");
         int salary = scan.nextInt();
@@ -22,6 +24,11 @@ public class Islemler {
         int workHours = scan.nextInt();
         System.out.print("ahngi yilda basladi ");
         int year = scan.nextInt();
+        //System.out.print("title nedir ? ");
+        //String kademeFalan = scan.nextLine();
+        //Title.valueOf(kademeFalan)
+
+
 
 
         Calisan calisanlar = new Calisan(name,salary,workHours,year);
@@ -37,7 +44,7 @@ public class Islemler {
        // cls.entrySet().stream().filter(t-> t.get())
         if(cls.get(id).getSalary()>10000){
             System.out.println("Odemeniz gereken vergi miktari :" + cls.get(id).getSalary() * 0.3);
-        }else System.out.println("Maasiniz belli bir degerden az oldugu icin odeme");
+        }else System.out.println("Maasiniz belli bir degerden az oldugu icin odeme yok");
         SwitchIslemleri.SwitchIslemleri();
 
     }

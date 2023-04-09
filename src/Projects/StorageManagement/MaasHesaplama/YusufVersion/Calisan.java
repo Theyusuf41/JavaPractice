@@ -2,19 +2,66 @@ package Projects.StorageManagement.MaasHesaplama.YusufVersion;
 
 import java.util.Locale;
 
-public class Calisan {
+public class Calisan  {
 
-    private   String name;
+
+    private  String name;
     private   int salary;
     private   int workHours;
     private   int year;
+
+
 
     public Calisan(String name, int salary, int workHours, int year) {
         this.name = name;
         this.salary = salary;
         this.workHours = workHours;
         this.year = year;
+
     }
+
+    /*private enum Title {
+            ISCI,
+            YONETICI,
+        };
+        private static Title title;
+
+        public Calisan(String name, int salary, int workHours, int year, Title title) {
+            this.Title = Title;
+            this.name = name;
+            this.salary = salary;
+            this.workHours = workHours;
+            this.year = year;
+        }
+
+
+
+        public static Title getTitle() {
+            return title;
+        }
+
+        public static void setTitle(Title title) {
+            Calisan.title = title;
+        }
+
+        /*public Calisan(String name, int salary, int workHours, int year, Title title) {
+            this.Title = Title;
+            this.name = name;
+            this.salary = salary;
+            this.workHours = workHours;
+            this.year = year;
+        }
+        public Calisan(String name, int salary, int workHours, int year) {
+        this.name = name;
+        this.salary = salary;
+        this.workHours = workHours;
+        this.year = year;
+    }
+
+
+        */
+
+
 
     public String getName() {
         return name;
@@ -35,7 +82,7 @@ public class Calisan {
     }
 
     public void setWorkHours(int workHours) {
-        this.workHours = workHours;
+        this.workHours = Math.abs(workHours);
     }
 
     public int getYear() {
