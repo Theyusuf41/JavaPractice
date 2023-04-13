@@ -36,6 +36,9 @@ public class Task {
     }
 
     }
+    // for i forEach tersten yazdir
+// StringBuilder reverse
+// lambda sort Compar
 
  /*
  Task->

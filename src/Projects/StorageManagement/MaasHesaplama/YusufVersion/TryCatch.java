@@ -7,7 +7,7 @@ public class TryCatch {
         var flag = false;
         var num =0;
         do{
-            if(scan.hasNextInt()){
+            if(scan.hasNextInt()){// bir sonraki
                 num = scan.nextInt();
                 flag= true;
             }else {

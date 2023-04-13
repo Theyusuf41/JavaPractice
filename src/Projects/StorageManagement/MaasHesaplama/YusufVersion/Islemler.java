@@ -22,7 +22,7 @@ public class Islemler {
         int salary = scan.nextInt();
         System.out.print("calisma saatleri: ");
         int workHours = scan.nextInt();
-        System.out.print("ahngi yilda basladi ");
+        System.out.print("Hangi yilda basladi ");
         int year = scan.nextInt();
         //System.out.print("title nedir ? ");
         //String kademeFalan = scan.nextLine();

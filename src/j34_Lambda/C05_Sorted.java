@@ -13,6 +13,7 @@ public class C05_Sorted {
         buyuktenKucuge(l1);
     }
 
+
     public static void buyuktenKucuge(List<Integer> l1) {
         // Task -> tek elemanlarin karesi ardindan buyukten kucuge siralama
         l1.stream()
@@ -30,7 +31,7 @@ public class C05_Sorted {
                         .map(t->Math.pow(t,2))
                         .sorted()
                         .forEach(t-> System.out.println(t));
-
-
     }
+
+
 }

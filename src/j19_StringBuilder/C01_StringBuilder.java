@@ -4,6 +4,13 @@ import java.time.LocalTime;
 
 public class C01_StringBuilder {
     public static void main(String[] args) {
+        // Host IP adres Password String guvenlik
+        // String a = "asdasd";
+        // StringBuilder StringBuffer
+        // thread-safe
+        // String name and Password yeni const StringBuilder -> conflict
+        // StringBUffer thread-safe
+
         String name = "";
         name+="QA tester";
         name+="Ali bey"; // String variable cok fazla method call icin performansi zayiftir.

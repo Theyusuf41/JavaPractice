@@ -1,11 +1,18 @@
 package j19_StringBuilder;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class C02_StringBuilder {
     public static void main(String[] args) {
         // StringBuilder Create etme
 
         // 1. Yol
         StringBuilder sb1 = new StringBuilder(); // default capacity 16
+        List<String> l1 = new ArrayList<>(Arrays.asList());
+
+
         System.out.println(sb1.length() + " lenght");
         System.out.println(sb1.capacity()+ " capacity");
 
@@ -21,6 +28,7 @@ public class C02_StringBuilder {
 
         // 2. Yol
         StringBuilder sb2 = new StringBuilder("Yusuf beye hizlica offer");
+
         System.out.println(sb2.length() + " lenght");
         System.out.println(sb2.capacity()+ " capacity");
         // initialize edilen StringBuilder ilk deger lenght'i capacity olarak atanir.

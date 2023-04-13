@@ -12,6 +12,7 @@ public class Calisan  {
 
 
 
+
     public Calisan(String name, int salary, int workHours, int year) {
         this.name = name;
         this.salary = salary;
