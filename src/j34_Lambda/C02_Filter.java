@@ -23,6 +23,8 @@ public class C02_Filter {
     public static void dividedByThree(int a) {
         System.out.print((a % 2 == 0) ? " " + a : "");
     }
+
+
     public static boolean ciftMi (int a) {
         return a%2==0;
     }

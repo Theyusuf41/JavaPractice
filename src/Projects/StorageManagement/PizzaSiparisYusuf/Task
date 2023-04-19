@@ -1,0 +1,28 @@
+ Task -> Pizza Projesi Team 01
+ -> Menu : Hayalinizde pizza ?
+ -> Butcen
+ -> NE istiyorsun
+ -> 50 Euro ile sucuk olan pizzlari getir.
+  l1 fiyat l2 icerik
+  menu -> 20 Euro icinde
+  l1.contains && l2.contains pepperoni
+  l3 lambda
+
+
+   1-Pizza ParentClass Pojo Const. burada uretilir
+        -> Fields: Pizza fiyati int
+        -> Pizza ebat boyut
+        -> Boolean Sucuk
+        -> Boolean Tavuk
+        -> Boolean Veggie
+        -> Boolean Et
+        -> Boolean Pineappple
+        -> Boolean Karisik
+   2- Islemler class
+       -> Giris menusu (Interface)
+       ->
+   3- Try- Catch
+   4- Runner
+
+
+
