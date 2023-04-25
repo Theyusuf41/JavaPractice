@@ -16,10 +16,8 @@ public class Q11_Fibonacci {
         int input = 10;
         for (int i = 2; i <input ; i++) {
             l1.add(l1.get(i-1)+ l1.get(i-2));
+            // 0,1,1,2,3,5
         }
         System.out.println(l1);
-
-
-
  }
 }

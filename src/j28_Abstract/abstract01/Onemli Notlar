@@ -1,0 +1,2 @@
+Abstract ile Interface arasindaki temel fark -> Birden fazla Interface eklenebilir ancka abstracte bir tane extends yapabilir
+Java 8 ile interface icine de concrete method ekleyebiliriz
